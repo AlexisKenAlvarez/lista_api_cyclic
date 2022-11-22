@@ -294,7 +294,27 @@ app.post("/forgot", async (req, res) => {
                     </body>
                     </html>
                     `
-        await sendGrid(user.email, "Change password", message)
+
+        sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+        try {
+            const msg = {
+                to: user.email,
+                from: {
+                    name: 'Lista PH',
+                    email: process.env.USER
+                },
+                subject: "Change password",
+                text: "From LISTA",
+                html: message
+            }
+
+            await sgMail.send(msg).then((response) =>
+                console.log("Email sent")).catch((error) =>
+                    console.log(error.message))
+
+        } catch (error) {
+            console.log(error.message)
+        }
 
         res.send({ token: passToken.token })
     }
