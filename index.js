@@ -93,7 +93,7 @@ app.post("/register", async (req, res) => {
                         <table width="100%" border="0" cellspacing="0" cellpadding="0" style="height: 60vh; background: #1D1D26; overflow: hidden;">
                             <tr>
                                 <td margin: 0 auto; height: 100%; margin-top: 5rem;" align="center">
-                                    <img src="https://unix-shop.s3.ap-southeast-1.amazonaws.com/lista/listalogo+2.png" alt="Logo" style="margin: 0 auto; width: 10rem; height: 4rem;"></img>
+                                    <img src="https://ik.imagekit.io/efpqj5mis/listalogo_2_YE6STLkFc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1665117620011" alt="Logo" style="margin: 0 auto; width: 10rem; height: 4rem;"></img>
                                     <h1 style="font-family:'Courier New'; color: #FFFFFF; text-align: center; margin: 0; margin-top: 2rem;">Account activation: </h1> <br>
     
                                     <p style="font-family:'Courier New'; color: #FFFFFF; text-align: center; margin: 0; margin-top: -5rem">Please click the button below to activate your account.</p>
